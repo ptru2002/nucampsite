@@ -25,9 +25,14 @@
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid" />
                 </div>
-                <div class="col">
+                <div class="col-8">
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
+                </div>
+                <div class="col align-self-center">
+                    <a href="#reserveForm" class="text-nowrap">
+                        <button type="button" class="bg-info text-light btn">Reserve Campsite</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -112,11 +117,11 @@
                 <div class="card">
                     <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
 
-                    <div class="card-body">
-                        <form>
-                            <div class="row">
-                                <label for="camperNumber">Number of Campers</label>
-                                <select id="camperNumber" name="camperNumber">
+                    <div class="card-body form-control">
+                        <form id="reserveForm">
+                            <div class="row m-3">
+                                <label for="camperNumber" class="col-sm-3 col-form-label">Number of Campers</label>
+                                <select id="camperNumber" name="camperNumber" class="col-12 col-sm-6">
 
                                     <option>How many campers?</option>
                                     <option value="one camper">One</option>
@@ -127,12 +132,16 @@
                                     <option value="Six camper">Six</option>
                                 </select>
                             </div>
-                            <div class="row">
-                                <label for="campDate">Date</label>
-                                <input type="date" id="campDate" name="campDate">
+                            <div class="row m-3">
+                                <div>
+                                    <label for="campDate" class="col-sm-3 col-form-label">Date</label>
+                                    <input type="date" id="campDate" name="campDate" class="col-12 col-sm-6">
+                                </div>
                             </div>
-                            <div class="row">
-                                
+                                <div class="row m-3">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
                             </div>
                     </div>
                 </div>
