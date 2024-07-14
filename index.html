@@ -74,13 +74,17 @@
 
 		<!-- feature section -->
         <section class="container">
-            <div class="row row-content">  
-                <div class="col-sm-4 col-md-3">
+            <div class="row row-content align-items-center">  
+                <div class="col-sm-4 col-md-3 order-sm-first">
                     <h2>Featured Campsites</h2>
                 </div>
-                <div class="col">
+                <div class="col-6">
                     <h3>React Lake Campground</h3>
                     <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+
+                </div>
+                <div class="col d-flex">
+                    <img class="img-thumbnail float-end" src="/img/react-lake-thumb.jpg">
                 </div>
             </div>
         </section>
@@ -103,6 +107,41 @@
             </div>
         </section>
         
+        <section class="row row-content">
+            <div class="col-sm-9 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
+
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <label for="camperNumber">Number of Campers</label>
+                                <select id="camperNumber" name="camperNumber">
+
+                                    <option>How many campers?</option>
+                                    <option value="one camper">One</option>
+                                    <option value="two camper">Two</option>
+                                    <option value="three camper">Three</option>
+                                    <option value="four camper">Four</option>
+                                    <option value="Five camper">Five</option>
+                                    <option value="Six camper">Six</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="campDate">Date</label>
+                                <input type="date" id="campDate" name="campDate">
+                            </div>
+                            <div class="row">
+                                
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+
     </main>
 
     <!-- footer -->
